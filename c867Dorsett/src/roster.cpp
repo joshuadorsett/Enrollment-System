@@ -92,9 +92,17 @@ void roster::printInvalidEmails()
 		}
 	}
 	if (invalid)
-		std::cout << "list of invalid emails:\n";
-		for(std::string email : invalidEmails)
+	{
+		std::cout << "List of invalid emails:\n";
+		for (std::string email : invalidEmails)
+		{
 			std::cout << email << "\n";
+		}
+	}
+	else
+	{
+		std::cout << "All emails are valid.";
+	}
 }
 
 void roster::printByDegreeProgram(const DegreeProgram& degreeProgram)

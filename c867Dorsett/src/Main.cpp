@@ -7,9 +7,9 @@
 int main()
 {
 	roster classRoster;
-	classRoster.add(2, "John", "Smith", "John1989@ gmail.com", 20, 30, 35, 40, SOFTWARE);
-	classRoster.add(1, "Joshua", "Dorsett", "joshdorsettgmail.com", 28, 55, 67, 88, SOFTWARE);
-// 	classRoster.remove(1);
+	classRoster.add(2, "John", "Smith", "John1989@gmail.com", 20, 30, 35, 40, SOFTWARE);
+	classRoster.add(1, "Joshua", "Dorsett", "joshdorsett@gmail.com", 28, 55, 67, 88, SOFTWARE);
+ 	classRoster.remove(1);
 	classRoster.printRoster();
 	classRoster.printAverageDaysInCourse(2);
 	classRoster.printByDegreeProgram(SOFTWARE);
