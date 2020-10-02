@@ -1,8 +1,6 @@
 #pragma once
 
-enum DegreeProgram {
+enum DegreeProgram 
+{
 	SECURITY, NETWORK, SOFTWARE
 };
-
-
-
