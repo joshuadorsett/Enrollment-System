@@ -1,6 +1,3 @@
-// This is a personal academic project. Dear PVS-Studio, please check it.
-// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
-
 #include "student.h"
 #include <iostream>
 #include <xutility>
@@ -79,7 +76,7 @@ void student::Print() const
 	std::cout << "information for student ID " << studentId << "\n";
 	std::cout << "name: " << firstName << " " << lastName << "\nemail: " << emailAddress << "\nage: " << age << "\n";
 	std::cout << "days left for course 1: " << numOfDaysLeft[0] << "\ndays left for course 2: " << numOfDaysLeft[1] << "\n";
-	std::cout << "days left for course 3: " << numOfDaysLeft[2] << "\ndegree program: " << degreeProgramString << "\n";
+	std::cout << "days left for course 3: " << numOfDaysLeft[2] << "\ndegree program: " << degreeProgramString << "\n-----------------------\n";
 }
 
 // getters

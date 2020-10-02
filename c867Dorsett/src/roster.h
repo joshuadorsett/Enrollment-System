@@ -17,6 +17,10 @@ public:
 
 	void remove(const std::string& studentID);
 
+	int getSize() const;
+
+	student* getRoster(const int& index) const;
+
 	void printRoster() const;
 
 	void printAverageDaysInCourse(const std::string& studentID);
