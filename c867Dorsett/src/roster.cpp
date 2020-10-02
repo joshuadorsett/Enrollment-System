@@ -2,20 +2,21 @@
 // PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
 #include "roster.h"
 #include <vector>
+#include <xutility>
 
+//constructor
 roster::roster()
 	:m_Size(0)
 {
 	for (auto& i : classRosterArray)
 		i = nullptr;
 }
-
+//destructor
 roster::~roster()
 {
 	for (int i = 0; i < m_Size; i++)
 		delete classRosterArray[i];
 }
-
 void roster::add(const int& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress,
 	const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const DegreeProgram& degreeprogram)
 {
@@ -23,7 +24,6 @@ void roster::add(const int& studentID, const std::string& firstName, const std::
 	classRosterArray[m_Size] = new student(studentID, firstName, lastName, emailAddress, age, daysInCourse1, daysInCourse2, daysInCourse3, degreeprogram);
 	m_Size++;
 }
-
 void roster::remove(const int& studentID)
 {
 	for (int i = 0; i < m_Size; i++)

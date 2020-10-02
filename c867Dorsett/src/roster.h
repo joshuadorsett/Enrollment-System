@@ -7,6 +7,7 @@ class roster
 {
 private:
 	int m_Size = 0;
+	int m_Capacity = 50;
 	student* classRosterArray[50];
 
 public:
