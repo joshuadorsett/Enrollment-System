@@ -9,12 +9,8 @@ a.  public void add(string studentID, string firstName, string lastName, string 
 b.  public void remove(string studentID)  that removes students from the roster by student ID. If the student ID does not exist, the function prints an error message indicating that the student was not found.
 c. public void printAll() that prints a complete tab-separated list of student data in the provided format: A1 [tab] First Name: John [tab] Last Name: Smith [tab] Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security. The printAll() function should loop through all the students in classRosterArray and call the print() function for each student.
 d.  public void printAverageDaysInCourse(string studentID)  that correctly prints a student’s average number of days in the three courses. The student is identified by the studentID parameter.
-
-
 e.  public void printInvalidEmails() that verifies student email addresses and displays all invalid email addresses to the user.
 Note: A valid email should include an at sign ('@') and period ('.') and should not include a space (' ').
-
-
 f.  public void printByDegreeProgram(DegreeProgram degreeProgram) that prints out student information for a degree program specified by an enumerated type.
 */
 #include "student.h"
@@ -29,7 +25,7 @@ private:
 public:
 	roster();
 	~roster();
-		void add(const int& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const DegreeProgram& degreeprogram);
+	void add(const int& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const DegreeProgram& degreeprogram);
 
 	void remove(const int& studentID);
 
@@ -42,5 +38,4 @@ public:
 	void printByDegreeProgram(DegreeProgram degreeProgram);
 
 };
-
 

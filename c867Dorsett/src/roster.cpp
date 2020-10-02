@@ -9,13 +9,13 @@ roster::roster()
 		i = nullptr;
 }
 
- roster::~roster()
- {
- 	for (int i = 0; i < m_Size; i++)
- 		delete classRosterArray[i];
- }
+roster::~roster()
+{
+	for (int i = 0; i < m_Size; i++)
+		delete classRosterArray[i];
+}
 
-void roster::add(const int& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress, 
+void roster::add(const int& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress,
 	const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const DegreeProgram& degreeprogram)
 {
 	student newStudent(studentID, firstName, lastName, emailAddress, age, daysInCourse1, daysInCourse2, daysInCourse3, degreeprogram);

@@ -15,23 +15,28 @@ private:
 
 	int age;
 
-	int numOfDaysLeft[3] = {0, 0, 0 };
+	int numOfDaysLeft[3] = { 0, 0, 0 };
 
 	DegreeProgram degreeProgram;
-	
+
+	std::string degreeProgramString;
+
+	std::string tostring(const DegreeProgram& degreeProgram);
+
 public:
 	//constructors
 	student();
-	student(const int& studentId, const std::string& firstName, const std::string& lastName, 
-		const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2, 
+	student(const int& studentId, const std::string& firstName, const std::string& lastName,
+		const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2,
 		const int& daysInCourse3, const DegreeProgram& degreeProgram);
 	//rule of fifths
 	~student();
- 	student(const student& copiedStudent); 	
+	student(const student& copiedStudent);
 	student& operator=(const student& copiedStudent);
-// 	student(student&& copiedStudent);
-// 	student& operator=(student&& copiedStudent) noexcept;
-	//Print data
+	// 	student(student&& copiedStudent);
+	// 	student& operator=(student&& copiedStudent) noexcept;
+		//Print data
+
 	void Print() const;
 	//getters
 	int getStudentId() const;
@@ -46,7 +51,7 @@ public:
 	//setters
 	void setStudentId(const int& id);
 	void setFirstName(const std::string& firstName);
-	void setLastName(const std::string &lastName);
+	void setLastName(const std::string& lastName);
 	void setEmailAddress(const std::string& emailAddress);
 	void setAge(const int& age);
 	//this currently sets each index one at a time but may change this to return multiple values in a tuple?
