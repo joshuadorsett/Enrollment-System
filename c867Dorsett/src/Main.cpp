@@ -23,21 +23,21 @@ int main()
 	
 	inputParser(studentData, classRoster);
 
-	std::cout << "c876\nC++\njdors43\nJoshua Dorsett\n-----------------------\n";
+	std::cout << "Scripting and Programming - Applications C867\nC++\njdors43\nJoshua Dorsett\n-----------------------\n";
 
 	classRoster.printRoster();
 
-	classRoster.printInvalidEmails();
+ 	classRoster.printInvalidEmails();
 
 	for (int i = 0; i < classRoster.getSize(); i++)
 	{
 		std::cout << "Student " << classRoster.getRoster(i)->getStudentId() << ": ";
 		classRoster.printAverageDaysInCourse(classRoster.getRoster(i)->getStudentId());
 	}
-	classRoster.printByDegreeProgram(SOFTWARE);
+ 	classRoster.printByDegreeProgram(SOFTWARE);
 	classRoster.remove("A3");
 	classRoster.printRoster();
-	classRoster.remove("A3");
+  	classRoster.remove("A3");
 
 	return 0;
 }
