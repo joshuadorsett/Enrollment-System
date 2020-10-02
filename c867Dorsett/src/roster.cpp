@@ -1,6 +1,7 @@
 // This is a personal academic project. Dear PVS-Studio, please check it.
 // PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
 #include "roster.h"
+#include <vector>
 
 roster::roster()
 	:m_Size(0)
@@ -39,7 +40,7 @@ void roster::remove(const int& studentID)
 	}
 }
 
-void roster::PrintRoster() const
+void roster::printRoster() const
 {
 	for (int i = 0; i < m_Size; i++)
 		classRosterArray[i]->Print();
@@ -65,9 +66,45 @@ void roster::printAverageDaysInCourse(const int& studentID)
 
 void roster::printInvalidEmails()
 {
+	std::vector<std::string> invalidEmails;
+	invalidEmails.reserve(m_Size);
+	bool invalid = false;
+	for (int i = 0; i <= m_Size; i++)
+	{
+		const std::string& email = classRosterArray[i]->getEmailAddress();
+		if (email.find(' ') < email.length())
+		{
+			invalidEmails.push_back(email);
+			invalid = true;
+			continue;
+		}
+		if (!(email.find('@') < email.length()))
+		{
+			invalidEmails.push_back(email);
+			invalid = true;
+			continue;
+		}
+		if (!(email.find('.') < email.length()))
+		{
+			invalidEmails.push_back(email);
+ 			invalid = true;
+			continue;
+		}
+	}
+	if (invalid)
+		std::cout << "list of invalid emails:\n";
+		for(std::string email : invalidEmails)
+			std::cout << email << "\n";
 }
 
-void roster::printByDegreeProgram(DegreeProgram degreeProgram)
+void roster::printByDegreeProgram(const DegreeProgram& degreeProgram)
 {
-
+	if (degreeProgram == SECURITY)
+		std::cout << "Security\n";
+	if (degreeProgram == NETWORK)
+		std::cout << "Network\n";
+	if (degreeProgram == SOFTWARE)
+		std::cout << "Software\n";
+	else
+		std::cout << "invalid degree program\n";
 }
