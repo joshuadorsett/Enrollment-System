@@ -5,7 +5,7 @@
 class student
 {
 private:
-	int studentId;
+	std::string studentId;
 
 	std::string firstName;
 
@@ -26,7 +26,7 @@ private:
 public:
 	//constructors
 	student();
-	student(const int& studentId, const std::string& firstName, const std::string& lastName,
+	student(const std::string& studentId, const std::string& firstName, const std::string& lastName,
 		const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2,
 		const int& daysInCourse3, const DegreeProgram& degreeProgram);
 	//rule of fifths
@@ -39,7 +39,7 @@ public:
 
 	void Print() const;
 	//getters
-	int getStudentId() const;
+	std::string getStudentId() const;
 	std::string getFirstName() const;
 	std::string getLastName() const;
 	std::string getEmailAddress() const;
@@ -49,7 +49,7 @@ public:
 	int getNumOfDaysLeft(const int& index) const;
 	DegreeProgram getDegreeProgram() const;
 	//setters
-	void setStudentId(const int& id);
+	void setStudentId(const std::string& id);
 	void setFirstName(const std::string& firstName);
 	void setLastName(const std::string& lastName);
 	void setEmailAddress(const std::string& emailAddress);

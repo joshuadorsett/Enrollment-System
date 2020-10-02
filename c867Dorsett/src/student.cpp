@@ -18,11 +18,11 @@ std::string student::tostring(const DegreeProgram& degreeProgram)
 }
 
 student::student()
-	:studentId(0), firstName("null"), lastName("null"), emailAddress("null"), age(0), degreeProgram(SOFTWARE)
+	:studentId("null"), firstName("null"), lastName("null"), emailAddress("null"), age(0), degreeProgram(SOFTWARE)
 {
 	degreeProgramString = this->tostring(SOFTWARE);
 }
-student::student(const int& studentId, const std::string& firstName, const std::string& lastName,
+student::student(const std::string& studentId, const std::string& firstName, const std::string& lastName,
 	const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2,
 	const int& daysInCourse3, const DegreeProgram& degreeProgram)
 	: studentId(studentId), firstName(firstName), lastName(lastName), emailAddress(emailAddress), age(age),
@@ -76,14 +76,14 @@ student& student::operator=(student&& copiedStudent) noexcept
 
 void student::Print() const
 {
-	std::cout << "information for student number " << studentId << "\n";
+	std::cout << "information for student ID " << studentId << "\n";
 	std::cout << "name: " << firstName << " " << lastName << "\nemail: " << emailAddress << "\nage: " << age << "\n";
 	std::cout << "days left for course 1: " << numOfDaysLeft[0] << "\ndays left for course 2: " << numOfDaysLeft[1] << "\n";
 	std::cout << "days left for course 3: " << numOfDaysLeft[2] << "\ndegree program: " << degreeProgramString << "\n";
 }
 
 // getters
-int student::getStudentId() const
+std::string student::getStudentId() const
 {
 	return this->studentId;
 }
@@ -119,7 +119,7 @@ DegreeProgram student::getDegreeProgram() const
 }
 
 //setters
-void student::setStudentId(const int& id)
+void student::setStudentId(const std::string& id)
 {
 	this->studentId = id;
 }
