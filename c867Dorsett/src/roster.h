@@ -19,6 +19,7 @@ f.  public void printByDegreeProgram(DegreeProgram degreeProgram) that prints ou
 */
 #include "student.h"
 #include <iostream>
+#include "degree.h"
 class roster
 {
 private:
@@ -28,7 +29,7 @@ private:
 public:
 	roster();
 	~roster();
-		void add(const int& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const std::string& degreeprogram);
+		void add(const int& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const DegreeProgram& degreeprogram);
 
 	void remove(const int& studentID);
 
@@ -38,7 +39,7 @@ public:
 
 	void printInvalidEmails();
 
-	void printByDegreeProgram(const std::string& degreeProgram);
+	void printByDegreeProgram(DegreeProgram degreeProgram);
 
 };
 

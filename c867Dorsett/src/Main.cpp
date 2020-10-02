@@ -7,8 +7,8 @@
 int main()
 {
 	roster classRoster;
-	classRoster.add(2, "John", "Smith", "John1989@gm ail.com", 20, 30, 35, 40, "Computer Science");
-	classRoster.add(1, "Joshua", "Dorsett", "joshdorsett@gmail.com", 28, 55, 67, 88, "Computer Science");
+	classRoster.add(2, "John", "Smith", "John1989@gm ail.com", 20, 30, 35, 40, SOFTWARE);
+	classRoster.add(1, "Joshua", "Dorsett", "joshdorsett@gmail.com", 28, 55, 67, 88, SOFTWARE);
 	classRoster.remove(1);
 	classRoster.PrintRoster();
 	classRoster.printAverageDaysInCourse(2);

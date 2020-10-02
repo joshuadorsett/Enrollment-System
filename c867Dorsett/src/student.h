@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <array>
+#include "degree.h"
 class student
 {
 private:
@@ -16,14 +17,14 @@ private:
 
 	int numOfDaysLeft[3] = {0, 0, 0 };
 
-	std::string degreeProgram;
+	DegreeProgram degreeProgram;
 	
 public:
 	//constructors
 	student();
 	student(const int& studentId, const std::string& firstName, const std::string& lastName, 
 		const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2, 
-		const int& daysInCourse3, const std::string& degreeProgram);
+		const int& daysInCourse3, const DegreeProgram& degreeProgram);
 	//rule of fifths
 	~student();
  	student(const student& copiedStudent); 	
@@ -41,7 +42,7 @@ public:
 	//this currently returns just one day based on the index
 	//may change this to return multiple values
 	int getNumOfDaysLeft(const int& index) const;
-	std::string getDegreeProgram() const;
+	DegreeProgram getDegreeProgram() const;
 	//setters
 	void setStudentId(const int& id);
 	void setFirstName(const std::string& firstName);
@@ -50,7 +51,7 @@ public:
 	void setAge(const int& age);
 	//this currently sets each index one at a time but may change this to return multiple values in a tuple?
 	void setNumOfDaysLeft(const int& courseOne, const int& courseTwo, const int& courseThree);
-	void setDegreeProgram(const std::string& degreeProgram);
+	void setDegreeProgram(const DegreeProgram& degreeProgram);
 
 };
 

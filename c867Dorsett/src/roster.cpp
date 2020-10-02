@@ -16,7 +16,7 @@ roster::roster()
  }
 
 void roster::add(const int& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress, 
-	const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const std::string& degreeprogram)
+	const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const DegreeProgram& degreeprogram)
 {
 	student newStudent(studentID, firstName, lastName, emailAddress, age, daysInCourse1, daysInCourse2, daysInCourse3, degreeprogram);
 	classRosterArray[m_Size] = new student(studentID, firstName, lastName, emailAddress, age, daysInCourse1, daysInCourse2, daysInCourse3, degreeprogram);
@@ -67,7 +67,7 @@ void roster::printInvalidEmails()
 {
 }
 
-void roster::printByDegreeProgram(const std::string& degreeProgram)
+void roster::printByDegreeProgram(DegreeProgram degreeProgram)
 {
 
 }

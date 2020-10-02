@@ -6,11 +6,11 @@
 #include <xutility>
 
 student::student()
-	:studentId(0), firstName("null"), lastName("null"), emailAddress("null"), age(0), degreeProgram("null")
+	:studentId(0), firstName("null"), lastName("null"), emailAddress("null"), age(0), degreeProgram(SOFTWARE)
 {}
 student::student(const int& studentId, const std::string& firstName, const std::string& lastName,
 	const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2,
-	const int& daysInCourse3, const std::string& degreeProgram)
+	const int& daysInCourse3, const DegreeProgram&  degreeProgram)
 	: studentId(studentId), firstName(firstName), lastName(lastName), emailAddress(emailAddress), age(age),
 	 degreeProgram(degreeProgram)
 {
@@ -96,7 +96,7 @@ int student::getNumOfDaysLeft(const int& index) const
 	return numOfDaysLeft[(int&&)index];
 }
 
-std::string student::getDegreeProgram() const
+DegreeProgram student::getDegreeProgram() const
 {
 	return this->degreeProgram;
 }
@@ -135,7 +135,7 @@ void student::setNumOfDaysLeft(const int& courseOne, const int& courseTwo, const
 
 }
 
-void student::setDegreeProgram(const std::string& degreeProgram)
+void student::setDegreeProgram(const DegreeProgram& degreeProgram)
 {
 	this->degreeProgram = degreeProgram;
 }
