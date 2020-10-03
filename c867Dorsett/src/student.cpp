@@ -23,33 +23,30 @@ student::student()
 }
 
 student::student(const std::string& studentId, const std::string& firstName, const std::string& lastName,
-	const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2,
-	const int& daysInCourse3, const DegreeProgram& degreeProgram)
+	const std::string& emailAddress, const int& age, int numOfDaysLeft[], const DegreeProgram& degreeProgram)
 	: studentId(studentId), firstName(firstName), lastName(lastName), emailAddress(emailAddress), age(age),
 	degreeProgram(degreeProgram)
 {
-	numOfDaysLeft[0] = daysInCourse1;
-	numOfDaysLeft[1] = daysInCourse2;
-	numOfDaysLeft[2] = daysInCourse3;
+	for (int i = 0; i < 3; i++)
+		this->numOfDaysLeft[i] = numOfDaysLeft[i];
 	degreeProgramString = this->tostring(degreeProgram);
 }
 
+//destructor
 student::~student()
-{
-}
+{}
 
-
+//copy constructor
 student::student(const student& copiedStudent)
 	: studentId(copiedStudent.studentId), firstName(copiedStudent.firstName), lastName(copiedStudent.lastName),
-	emailAddress(copiedStudent.emailAddress), age(copiedStudent.age),
-	degreeProgram(copiedStudent.degreeProgram)
+	emailAddress(copiedStudent.emailAddress), age(copiedStudent.age), degreeProgram(copiedStudent.degreeProgram)
 {
-	numOfDaysLeft[0] = copiedStudent.numOfDaysLeft[0];
-	numOfDaysLeft[1] = copiedStudent.numOfDaysLeft[1];
-	numOfDaysLeft[2] = copiedStudent.numOfDaysLeft[2];
+	for (int i = 0; i < 3; i++)
+		this->numOfDaysLeft[i] = copiedStudent.numOfDaysLeft[i];
 	degreeProgramString = this->tostring(copiedStudent.degreeProgram);
 }
 
+//copy assignment operator
 student& student::operator=(const student& copiedStudent)
 {
 	studentId = copiedStudent.studentId;
@@ -57,9 +54,8 @@ student& student::operator=(const student& copiedStudent)
 	lastName = copiedStudent.lastName;
 	emailAddress = copiedStudent.emailAddress;
 	age = copiedStudent.age;
-	numOfDaysLeft[0] = copiedStudent.numOfDaysLeft[0];
-	numOfDaysLeft[1] = copiedStudent.numOfDaysLeft[1];
-	numOfDaysLeft[2] = copiedStudent.numOfDaysLeft[2];
+	for (int i = 0; i < 3; i++)
+		this->numOfDaysLeft[i] = numOfDaysLeft[i];
 	degreeProgram = copiedStudent.degreeProgram;
 	degreeProgramString = this->tostring(copiedStudent.degreeProgram);
 	return *this;

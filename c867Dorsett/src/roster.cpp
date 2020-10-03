@@ -9,18 +9,24 @@ roster::roster()
 	for (auto& i : classRosterArray)
 		i = nullptr;
 }
+
 //destructor
 roster::~roster()
 {
 	for (unsigned int i = 0; i < classRosterArray.size(); i++)
 		delete classRosterArray.at(i);
 }
+
+//adds student to roster.
 void roster::add(const std::string& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress,
 	const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const DegreeProgram& degreeprogram)
 {
- 	student* newStudent = new student(studentID, firstName, lastName, emailAddress, age, daysInCourse1, daysInCourse2, daysInCourse3, degreeprogram);
+	int temp[] = { daysInCourse1, daysInCourse2, daysInCourse3 };
+ 	student* newStudent = new student(studentID, firstName, lastName,emailAddress, age, temp, degreeprogram);
 	classRosterArray.push_back(newStudent);
 }
+
+//removes student from roster.
 void roster::remove(const std::string& studentID)
 {
 	for (unsigned int i = 0; i < classRosterArray.size(); i++)
@@ -37,22 +43,26 @@ void roster::remove(const std::string& studentID)
 	std::cout << "student not found in roster.\n-----------------------\n";
 }
 
+//gets the size of the roster
 int roster::getSize() const
 {
 	return classRosterArray.size();
 }
 
+//returns the pointer to the array of students.
 student* roster::getRoster(const int& index) const
 {
 	return classRosterArray.at(index);
 }
 
+//calls student.print() function for each student in roster.
 void roster::printRoster() const
 {
 	for (unsigned int i = 0; i < classRosterArray.size(); i++)
 		classRosterArray.at(i)->Print();
 }
 
+//prints average days left for courses by student ID
 void roster::printAverageDaysInCourse(const std::string& studentID)
 {
 	for (unsigned int i = 0; i < classRosterArray.size(); i++)
@@ -68,13 +78,14 @@ void roster::printAverageDaysInCourse(const std::string& studentID)
 	std::cout << "student not found in roster\n-----------------------\n";
 }
 
+//prints a list of emails that are not valid according to email rules
 void roster::printInvalidEmails()
 {
 	std::vector<std::string> invalidEmails;
 	invalidEmails.reserve(classRosterArray.size());
 	bool invalid = false;
 	std::string email;
-	for (int i = 0; i < classRosterArray.size(); i++)
+	for (unsigned int i = 0; i < classRosterArray.size(); i++)
 	{
 		email = classRosterArray.at(i)->getEmailAddress();
 		if (email.find(' ') < email.length())
@@ -106,6 +117,7 @@ void roster::printInvalidEmails()
 		std::cout << "All emails are valid.\n-----------------------\n";
 }
 
+//prints the degree program associated with appropriate enum value.
 void roster::printByDegreeProgram(const DegreeProgram& degreeProgram)
 {
 	if (degreeProgram == SECURITY)

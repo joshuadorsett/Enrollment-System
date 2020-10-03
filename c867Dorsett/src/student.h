@@ -20,10 +20,15 @@ public:
 	//constructors
 	student();
 	student(const std::string& studentId, const std::string& firstName, const std::string& lastName,
-		const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2,
-		const int& daysInCourse3, const DegreeProgram& degreeProgram);
+		const std::string& emailAddress, const int& age, int numOfDaysLeft[], const DegreeProgram& degreeProgram);
+	
+	//destructor
 	~student();
+
+	//copy constructor
 	student(const student& copiedStudent);
+
+	//copy assignment operator
 	student& operator=(const student& copiedStudent);
 
 	// Prints Student data to console.
