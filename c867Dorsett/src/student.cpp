@@ -2,6 +2,7 @@
 #include <iostream>
 #include <xutility>
 
+// private member function used to output a string for degree program.
 std::string student::tostring(const DegreeProgram& degreeProgram)
 {
 	if (degreeProgram == SECURITY)
@@ -14,11 +15,13 @@ std::string student::tostring(const DegreeProgram& degreeProgram)
 		return "invalid degree program";
 }
 
+//constructors
 student::student()
 	:studentId("null"), firstName("null"), lastName("null"), emailAddress("null"), age(0), degreeProgram(SOFTWARE)
 {
 	degreeProgramString = this->tostring(SOFTWARE);
 }
+
 student::student(const std::string& studentId, const std::string& firstName, const std::string& lastName,
 	const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2,
 	const int& daysInCourse3, const DegreeProgram& degreeProgram)
@@ -61,22 +64,14 @@ student& student::operator=(const student& copiedStudent)
 	degreeProgramString = this->tostring(copiedStudent.degreeProgram);
 	return *this;
 }
-/*
-student::student(student&& copiedStudent) noexcept
-{
-}
-student& student::operator=(student&& copiedStudent) noexcept
-{
-	return *this;
-}
-*/
 
+// Prints student data to console.
 void student::Print() const
 {
-	std::cout << "information for student ID " << studentId << "\n";
-	std::cout << "name: " << firstName << " " << lastName << "\nemail: " << emailAddress << "\nage: " << age << "\n";
-	std::cout << "days left for course 1: " << numOfDaysLeft[0] << "\ndays left for course 2: " << numOfDaysLeft[1] << "\n";
-	std::cout << "days left for course 3: " << numOfDaysLeft[2] << "\ndegree program: " << degreeProgramString << "\n-----------------------\n";
+	std::cout << "Student ID: " << studentId << "\n";
+	std::cout << "Name: " << firstName << " " << lastName << "\nEmail: " << emailAddress << "\nAge: " << age << "\n";
+	std::cout << "Days left for course 1: " << numOfDaysLeft[0] << "\nDays left for course 2: " << numOfDaysLeft[1] << "\n";
+	std::cout << "Days left for course 3: " << numOfDaysLeft[2] << "\nDegree program: " << degreeProgramString << "\n-----------------------\n";
 }
 
 // getters
