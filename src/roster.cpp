@@ -1,7 +1,4 @@
 #include "roster.h"
-#include <vector>
-#include <xutility>
-#include <string>
 
 //constructor
 roster::roster()
@@ -10,19 +7,13 @@ roster::roster()
 		i = nullptr;
 }
 
-//destructor
-roster::~roster()
-{
-	for (unsigned int i = 0; i < classRosterArray.size(); i++)
-		delete classRosterArray.at(i);
-}
-
 //adds student to roster.
 void roster::add(const std::string& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress,
 	const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const DegreeProgram& degreeprogram)
 {
-	int temp[] = { daysInCourse1, daysInCourse2, daysInCourse3 };
- 	student* newStudent = new student(studentID, firstName, lastName,emailAddress, age, temp, degreeprogram);
+	std::vector<int> temp{ daysInCourse1, daysInCourse2, daysInCourse3 };
+// 	auto* newStudent = new student(studentID, firstName, lastName,emailAddress, age, temp, degreeprogram);
+ 	auto newStudent = std::make_shared<student>(studentID, firstName, lastName,emailAddress, age, temp, degreeprogram);
 	classRosterArray.push_back(newStudent);
 }
 
@@ -34,7 +25,6 @@ void roster::remove(const std::string& studentID)
 		if (studentID == classRosterArray.at(i)->getStudentId())
 		{
 			std::cout << classRosterArray[i]->getStudentId() << " has been deleted.\n-----------------------\n";
-			delete classRosterArray.at(i);
 			classRosterArray.erase(classRosterArray.begin() + i);
 			return;
 		}
@@ -46,31 +36,35 @@ void roster::remove(const std::string& studentID)
 //gets the size of the roster
 int roster::getSize() const
 {
-	return classRosterArray.size();
+	return static_cast<int>(classRosterArray.size());
 }
 
 //returns the pointer to the array of students.
-student* roster::getRoster(const int& index) const
+std::shared_ptr<student> roster::getRoster(const int& index) const
 {
-	return classRosterArray.at(index);
+	return classRosterArray.at((unsigned long) index);
 }
 
 //calls student.print() function for each student in roster.
 void roster::printRoster() const
 {
-	for (unsigned int i = 0; i < classRosterArray.size(); i++)
-		classRosterArray.at(i)->Print();
+	for (auto i : classRosterArray)
+		i->Print();
 }
 
 //prints average days left for courses by student ID
 void roster::printAverageDaysInCourse(const std::string& studentID)
 {
-	for (unsigned int i = 0; i < classRosterArray.size(); i++)
+	for (auto & i : classRosterArray)
 	{
-		if (studentID == classRosterArray.at(i)->getStudentId())
+		if (studentID == i->getStudentId())
 		{
-			student* selectedStudent = classRosterArray.at(i);
-			int total = selectedStudent->getNumOfDaysLeft(0) + selectedStudent->getNumOfDaysLeft(1) + selectedStudent->getNumOfDaysLeft(2);
+			auto selectedStudent = i;
+			int total =
+			        selectedStudent->getNumOfDaysLeft(0) +
+			        selectedStudent->getNumOfDaysLeft(1) +
+			        selectedStudent->getNumOfDaysLeft(2);
+			
 			std::cout << "average number of days left is " << total / 3 << "\n-----------------------\n";
 			return;
 		}
@@ -84,23 +78,22 @@ void roster::printInvalidEmails()
 	std::vector<std::string> invalidEmails;
 	invalidEmails.reserve(classRosterArray.size());
 	bool invalid = false;
-	std::string email;
-	for (unsigned int i = 0; i < classRosterArray.size(); i++)
+	for (auto & student : classRosterArray)
 	{
-		email = classRosterArray.at(i)->getEmailAddress();
-		if (email.find(' ') < email.length())
+        auto email = student->getEmailAddress();
+		if (email.size() > email.find(' '))
 		{
 			invalidEmails.push_back(email);
 			invalid = true;
 			continue;
 		}
-		if (!(email.find('@') < email.length()))
+		if (email.size() <= email.find('@'))
 		{
 			invalidEmails.push_back(email);
 			invalid = true;
 			continue;
 		}
-		if (!(email.find('.') < email.length()))
+		if (email.size() <= email.find('.'))
 		{
 			invalidEmails.push_back(email);
  			invalid = true;

@@ -8,13 +8,12 @@ class roster
 {
 private:
 	//dynamic array of pointers to each student in the roster.
-	std::vector<student*> classRosterArray;
+	std::vector<std::shared_ptr<student>> classRosterArray;
 
 public:
 
 	//constructors
 	roster();
-	~roster();
 
 	//adds student to roster.
 	void add(const std::string& studentID, const std::string& firstName, const std::string& lastName, const std::string& emailAddress, const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const DegreeProgram& degreeprogram);
@@ -26,7 +25,7 @@ public:
 	int getSize() const;
 
 	//returns the pointer to the array of students.
-	student* getRoster(const int& index) const;
+    std::shared_ptr<student> getRoster(const int& index) const;
 
 	//calls student.print() function for each student in roster.
 	void printRoster() const;
@@ -38,7 +37,7 @@ public:
 	void printInvalidEmails();
 
 	//prints the degree program associated with appropriate enum value.
-	void printByDegreeProgram(const DegreeProgram& degreeProgram);
+	static void printByDegreeProgram(const DegreeProgram& degreeProgram);
 
 };
 

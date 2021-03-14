@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Enrollment_System" targetName="Enrollment_System" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f8cb7e19-7616-4be7-8163-5e2a4cac8d61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Enrollment-System.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/CXX.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/Main.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/roster.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/student.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Enrollment_System" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Enrollment_System.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/student.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/student.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c867Dorsett.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c867Dorsett/c867Dorsett.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c867Dorsett/c867Dorsett.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/Main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/degree.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/degree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/roster.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/roster.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/roster.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/roster.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/student.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/student.h" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1pfzbu39dNxrpRby6gRBBfxI7gz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Enrollment_System" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Enrollment_System" TARGET_NAME="Enrollment_System" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Enrollment_System" RUN_TARGET_NAME="Enrollment_System">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8cb7e19-7616-4be7-8163-5e2a4cac8d61" name="Default Changelist" comment="" />
+      <created>1615589006546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615589006546</updated>
+      <workItem from="1615589007790" duration="270000" />
+      <workItem from="1615679648264" duration="585000" />
+      <workItem from="1615734070613" duration="216000" />
+      <workItem from="1615734289072" duration="2985000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="396" y="144" key="#Deployment" timestamp="1615679998572">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="396" y="144" key="#Deployment/0.0.1792.1120@0.0.1792.1120" timestamp="1615679998572" />
+    <state x="569" y="251" key="#Servers" timestamp="1615679962776">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="569" y="251" key="#Servers/0.0.1792.1120@0.0.1792.1120" timestamp="1615679962776" />
+    <state x="356" y="215" width="1094" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615589154611">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="356" y="215" width="1094" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1615589154611" />
+    <state x="599" y="403" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1615736071236">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="599" y="403" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1792.1120@0.0.1792.1120" timestamp="1615736071236" />
+    <state width="1736" height="304" key="GridCell.Tab.0.bottom" timestamp="1615737206627">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1736" height="304" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1615737206627" />
+    <state width="1736" height="304" key="GridCell.Tab.0.center" timestamp="1615737206626">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1736" height="304" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1615737206626" />
+    <state width="1736" height="304" key="GridCell.Tab.0.left" timestamp="1615737206625">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1736" height="304" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1615737206625" />
+    <state width="1736" height="304" key="GridCell.Tab.0.right" timestamp="1615737206627">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1736" height="304" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1615737206627" />
+    <state width="800" height="255" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1615734284857">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="800" height="255" key="ImportCMakeProjectWizard.bottomPanel/0.0.1792.1120@0.0.1792.1120" timestamp="1615734284857" />
+    <state width="800" height="595" key="ImportCMakeProjectWizard.topPanel" timestamp="1615734284857">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="800" height="595" key="ImportCMakeProjectWizard.topPanel/0.0.1792.1120@0.0.1792.1120" timestamp="1615734284857" />
+    <state x="925" y="256" width="619" height="474" key="refactoring.ChangeSignatureDialog" timestamp="1615734847960">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="925" y="256" width="619" height="474" key="refactoring.ChangeSignatureDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1615734847960" />
+  </component>
+</project>

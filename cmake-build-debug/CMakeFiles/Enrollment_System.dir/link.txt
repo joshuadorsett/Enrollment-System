@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Enrollment_System.dir/src/Main.cpp.o CMakeFiles/Enrollment_System.dir/src/roster.cpp.o CMakeFiles/Enrollment_System.dir/src/student.cpp.o  -o Enrollment_System 
