@@ -2,9 +2,7 @@
 // Created by Joshua Dorsett on 3/14/21.
 //
 
-#ifndef ENROLLMENT_SYSTEM_PARSER_H
-#define ENROLLMENT_SYSTEM_PARSER_H
-
+#pragma once
 
 #include <sstream>
 
@@ -55,6 +53,7 @@ namespace parser
         {
             //makes a vector to hold each section of the string that will be split.
             std::vector<std::string> result;
+            
             //makes a string stream object with the current string.
             std::stringstream stringStream(studentData[i]);
             
@@ -81,4 +80,3 @@ namespace parser
         //starts over for next student in the loop or ends function if complete.
     }
 }
-#endif //ENROLLMENT_SYSTEM_PARSER_H

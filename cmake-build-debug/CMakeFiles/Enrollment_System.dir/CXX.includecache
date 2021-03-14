@@ -6,21 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/joshuadorsett/Desktop/code_jpd/Enrollment-System/src/Main.cpp
-iostream
--
-student.h
-/Users/joshuadorsett/Desktop/code_jpd/Enrollment-System/src/student.h
-roster.h
-/Users/joshuadorsett/Desktop/code_jpd/Enrollment-System/src/roster.h
-parser.h
-/Users/joshuadorsett/Desktop/code_jpd/Enrollment-System/src/parser.h
-
 /Users/joshuadorsett/Desktop/code_jpd/Enrollment-System/src/degree.h
 
-/Users/joshuadorsett/Desktop/code_jpd/Enrollment-System/src/parser.h
-sstream
--
+/Users/joshuadorsett/Desktop/code_jpd/Enrollment-System/src/roster.cpp
+roster.h
+/Users/joshuadorsett/Desktop/code_jpd/Enrollment-System/src/roster.h
 
 /Users/joshuadorsett/Desktop/code_jpd/Enrollment-System/src/roster.h
 student.h

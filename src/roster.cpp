@@ -4,7 +4,9 @@
 roster::roster()
 {
 	for (auto& i : classRosterArray)
-		i = nullptr;
+    {
+	    i = nullptr;
+    }
 }
 
 //adds student to roster.
@@ -12,8 +14,9 @@ void roster::add(const std::string& studentID, const std::string& firstName, con
 	const int& age, const int& daysInCourse1, const int& daysInCourse2, const int& daysInCourse3, const DegreeProgram& degreeprogram)
 {
 	std::vector<int> temp{ daysInCourse1, daysInCourse2, daysInCourse3 };
-// 	auto* newStudent = new student(studentID, firstName, lastName,emailAddress, age, temp, degreeprogram);
+	
  	auto newStudent = std::make_shared<student>(studentID, firstName, lastName,emailAddress, age, temp, degreeprogram);
+ 	
 	classRosterArray.push_back(newStudent);
 }
 
@@ -25,7 +28,9 @@ void roster::remove(const std::string& studentID)
 		if (studentID == classRosterArray.at(i)->getStudentId())
 		{
 			std::cout << classRosterArray[i]->getStudentId() << " has been deleted.\n-----------------------\n";
+			
 			classRosterArray.erase(classRosterArray.begin() + i);
+			
 			return;
 		}
 		
@@ -48,24 +53,26 @@ std::shared_ptr<student> roster::getRoster(const int& index) const
 //calls student.print() function for each student in roster.
 void roster::printRoster() const
 {
-	for (auto i : classRosterArray)
-		i->Print();
+	for (const auto& student : classRosterArray)
+    {
+	    student->Print();
+    }
 }
 
 //prints average days left for courses by student ID
 void roster::printAverageDaysInCourse(const std::string& studentID)
 {
-	for (auto & i : classRosterArray)
+	for (auto & student : classRosterArray)
 	{
-		if (studentID == i->getStudentId())
+		if (studentID == student->getStudentId())
 		{
-			auto selectedStudent = i;
 			int total =
-			        selectedStudent->getNumOfDaysLeft(0) +
-			        selectedStudent->getNumOfDaysLeft(1) +
-			        selectedStudent->getNumOfDaysLeft(2);
+			        student->getNumOfDaysLeft(0) +
+			        student->getNumOfDaysLeft(1) +
+			        student->getNumOfDaysLeft(2);
 			
 			std::cout << "average number of days left is " << total / 3 << "\n-----------------------\n";
+			
 			return;
 		}
 	}
@@ -78,9 +85,11 @@ void roster::printInvalidEmails()
 	std::vector<std::string> invalidEmails;
 	invalidEmails.reserve(classRosterArray.size());
 	bool invalid = false;
+	
 	for (auto & student : classRosterArray)
 	{
         auto email = student->getEmailAddress();
+        
 		if (email.size() > email.find(' '))
 		{
 			invalidEmails.push_back(email);
@@ -102,23 +111,37 @@ void roster::printInvalidEmails()
 	if (invalid)
 	{
 		std::cout << "List of invalid emails:\n";
+		
 		for (std::string& email : invalidEmails)
-			std::cout << email << "\n";
+        {
+		    std::cout << email << "\n";
+        }
+		
 		std::cout << "-----------------------\n";
 	}
 	else
-		std::cout << "All emails are valid.\n-----------------------\n";
+    {
+	    std::cout << "All emails are valid.\n-----------------------\n";
+    }
 }
 
 //prints the degree program associated with appropriate enum value.
 void roster::printByDegreeProgram(const DegreeProgram& degreeProgram)
 {
 	if (degreeProgram == SECURITY)
-		std::cout << "Security\n-----------------------\n";
+    {
+	    std::cout << "Security\n-----------------------\n";
+    }
 	if (degreeProgram == NETWORK)
-		std::cout << "Network\n-----------------------\n";
+    {
+	    std::cout << "Network\n-----------------------\n";
+    }
 	if (degreeProgram == SOFTWARE)
-		std::cout << "Software\n-----------------------\n";
+    {
+        std::cout << "Software\n-----------------------\n";
+    }
 	else
-		std::cout << "invalid degree program\n-----------------------\n";
+    {
+	    std::cout << "invalid degree program\n-----------------------\n";
+    }
 }

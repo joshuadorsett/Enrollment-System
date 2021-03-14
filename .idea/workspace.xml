@@ -12,63 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8cb7e19-7616-4be7-8163-5e2a4cac8d61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Enrollment-System.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/Main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/roster.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/student.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Enrollment_System" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Enrollment_System.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parser.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/student.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/student.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c867Dorsett.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c867Dorsett/c867Dorsett.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c867Dorsett/c867Dorsett.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/Main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/degree.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/degree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/roster.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/roster.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/roster.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/roster.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/student.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c867Dorsett/src/student.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/Main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/Main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/roster.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/roster.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/student.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Enrollment_System.dir/src/student.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Enrollment_System" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Enrollment_System" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roster.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/roster.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/student.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/student.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/student.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/student.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,12 +68,24 @@
       <workItem from="1615589007790" duration="270000" />
       <workItem from="1615679648264" duration="585000" />
       <workItem from="1615734070613" duration="216000" />
-      <workItem from="1615734289072" duration="2985000" />
+      <workItem from="1615734289072" duration="3588000" />
     </task>
+    <task id="LOCAL-00001" summary="refactored entire project replacing all raw pointer and arrays with smart pointers and STL raii containers. Also added a cmake build system to deviate from the visual studio build.">
+      <created>1615737363794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615737363795</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactored entire project replacing all raw pointer and arrays with smart pointers and STL raii containers. Also added a cmake build system to deviate from the visual studio build." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored entire project replacing all raw pointer and arrays with smart pointers and STL raii containers. Also added a cmake build system to deviate from the visual studio build." />
   </component>
   <component name="WindowStateProjectService">
     <state x="396" y="144" key="#Deployment" timestamp="1615679998572">
@@ -139,22 +104,26 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="599" y="403" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1792.1120@0.0.1792.1120" timestamp="1615736071236" />
-    <state width="1736" height="304" key="GridCell.Tab.0.bottom" timestamp="1615737206627">
+    <state x="265" y="56" key="CommitChangelistDialog2" timestamp="1615737363572">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1736" height="304" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1615737206627" />
-    <state width="1736" height="304" key="GridCell.Tab.0.center" timestamp="1615737206626">
+    <state x="265" y="56" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1615737363572" />
+    <state width="1736" height="304" key="GridCell.Tab.0.bottom" timestamp="1615737895772">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1736" height="304" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1615737206626" />
-    <state width="1736" height="304" key="GridCell.Tab.0.left" timestamp="1615737206625">
+    <state width="1736" height="304" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1615737895772" />
+    <state width="1736" height="304" key="GridCell.Tab.0.center" timestamp="1615737895771">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1736" height="304" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1615737206625" />
-    <state width="1736" height="304" key="GridCell.Tab.0.right" timestamp="1615737206627">
+    <state width="1736" height="304" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1615737895771" />
+    <state width="1736" height="304" key="GridCell.Tab.0.left" timestamp="1615737895769">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1736" height="304" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1615737206627" />
+    <state width="1736" height="304" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1615737895769" />
+    <state width="1736" height="304" key="GridCell.Tab.0.right" timestamp="1615737895772">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1736" height="304" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1615737895772" />
     <state width="800" height="255" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1615734284857">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -163,6 +132,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="800" height="595" key="ImportCMakeProjectWizard.topPanel/0.0.1792.1120@0.0.1792.1120" timestamp="1615734284857" />
+    <state x="396" y="237" key="Vcs.Push.Dialog.v2" timestamp="1615737399015">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="396" y="237" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1615737399015" />
     <state x="925" y="256" width="619" height="474" key="refactoring.ChangeSignatureDialog" timestamp="1615734847960">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

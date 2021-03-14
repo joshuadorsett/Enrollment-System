@@ -22,8 +22,7 @@ int main()
     parser::inputParser(studentData, classRoster);
     
     //outputs project information
-    std::cout
-            << "Scripting and Programming - Applications C867\nC++\njdors43\nJoshua Dorsett\n-----------------------\n";
+    std::cout << "Student Enrollment System\nJoshua Dorsett\n-----------------------\n";
     
     //prints the current roster.
     classRoster.printRoster();

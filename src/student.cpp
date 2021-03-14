@@ -5,13 +5,21 @@
 std::string student::m_tostring(const DegreeProgram& degreeProgram)
 {
 	if (degreeProgram == SECURITY)
-		return "Security";
+    {
+	    return "Security";
+    }
 	if (degreeProgram == NETWORK)
-		return "Network";
+    {
+	    return "Network";
+    }
 	if (degreeProgram == SOFTWARE)
-		return "Software";
+    {
+	    return "Software";
+    }
 	else
-		return "invalid degree program";
+    {
+	    return "invalid degree program";
+    }
 }
 
 //constructors
@@ -27,7 +35,9 @@ student::student(std::string  studentId, std::string  firstName, std::string  la
       m_degreeProgram(degreeProgram)
 {
 	for (int i = 0; i < 3; i++)
-		this->m_numOfDaysLeft[i] = numOfDaysLeft[i];
+    {
+	    this->m_numOfDaysLeft[i] = numOfDaysLeft[i];
+    }
     m_degreeProgramString = this->m_tostring(degreeProgram);
 }
 
@@ -40,7 +50,9 @@ student::student(const student& copiedStudent)
       m_emailAddress(copiedStudent.m_emailAddress), m_age(copiedStudent.m_age), m_degreeProgram(copiedStudent.m_degreeProgram)
 {
 	for (int i = 0; i < 3; i++)
-		this->m_numOfDaysLeft[i] = copiedStudent.m_numOfDaysLeft[i];
+    {
+	    this->m_numOfDaysLeft[i] = copiedStudent.m_numOfDaysLeft[i];
+    }
     m_degreeProgramString = this->m_tostring(copiedStudent.m_degreeProgram);
 }
 
@@ -53,7 +65,9 @@ student& student::operator=(const student& copiedStudent)
     m_emailAddress = copiedStudent.m_emailAddress;
     m_age = copiedStudent.m_age;
 	for (int i = 0; i < 3; i++)
-		this->m_numOfDaysLeft[i] = m_numOfDaysLeft[i];
+    {
+	    this->m_numOfDaysLeft[i] = m_numOfDaysLeft[i];
+    }
     m_degreeProgram = copiedStudent.m_degreeProgram;
     m_degreeProgramString = this->m_tostring(copiedStudent.m_degreeProgram);
 	return *this;
